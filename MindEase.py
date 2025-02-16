@@ -14,9 +14,9 @@ st.sidebar.write("Select to view the Mood History.")
 # Main
 user_input = st.text_area("Write to us about how you feel today:"," ")
 
-def init_session_state():
-    if "moodhistory" not in st.session_state:
-        st.session_state.moodhistory = []
+
+if "moodhistory" not in st.session_state:
+    st.session_state.moodhistory = []
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 def get_gpt_response(user_input):
