@@ -78,3 +78,10 @@ gif_urls = [
 ]      
 gif = random.choice(gif_urls)
 st.image(gif, width=400, caption="Stay pawsitive! You got this!")      # use_container_width=True
+
+if st.button("Talk to Mobo"):
+    if user_input:
+        response = get_gpt_response(user_input)
+        st.write("💬 **Mobo's Response:**", response)
+    else:
+        st.warning("Please enter a message to chat with Mobo.")
