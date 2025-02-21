@@ -4,12 +4,19 @@ import openai                           # OpenAI AI's models GPT-3
 import os
 import random
 
-st.set_page_config(page_title="MindEase", page_icon="🧠", layout="centered", initial_sidebar_state="expanded")
+st.set_page_config(page_title="MindEase", page_icon="LOGO.png", layout="centered", initial_sidebar_state="expanded")
 st.title("MindEase")
 
 # Sidebar
+st.sidebar.image("LOGO.png", width=100)
 st.sidebar.title("MindEase")
-st.sidebar.write("Select to view the Mood History.")
+st.sidebar.write("""**Welcome to MindEase AI!**
+- This app helps you:
+- 🎭 **Analyze Mood** and get advice.
+- 💬 **Chat with AI** for mental health support.
+- 📊 **Track mood history** from past interactions.
+                 
+🚀 **Start exploring MindEase now!**""")
 
 # Main
 user_input = st.text_area("Write to us about how you feel today:"," ")
