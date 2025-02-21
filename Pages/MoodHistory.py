@@ -3,14 +3,14 @@ import matplotlib.pyplot as plt
 
 st.title("Mood History Over Time")
 
-if "mood_history" not in st.session_state:
-    st.session_state.mood_history = []
+if "moodhistory" not in st.session_state:
+    st.session_state.moodhistory = []
 
-if len(st.session_state.mood_history) > 0:
+if len(st.session_state.moodhistory) > 0:
     st.write("Here's how your mood has changed over time based on your input:")
        # Plot Mood History
     plt.figure(figsize=(8, 4))
-    plt.plot(st.session_state.mood_history, marker='o', linestyle='-', color='b')
+    plt.plot(st.session_state.moodhistory, marker='o', linestyle='-', color='b')
     plt.xlabel("Entries")
     plt.ylabel("Mood Score")
     plt.title("Mood Trends Over Time")
