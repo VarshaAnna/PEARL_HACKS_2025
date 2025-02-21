@@ -1,5 +1,5 @@
 # PEARL_HACKS_2025
-🧠 ** MindEase - Mental Health Companion **
+🧠 ## MindEase - Mental Health Companion
 
 🌟 ** Overview **
 MindEase AI is an AI-powered mental health companion that helps users track their mood, get personalized advice, and chat with an AI for emotional support. It uses sentiment analysis to understand user emotions and provides helpful suggestions for mental well-being.
